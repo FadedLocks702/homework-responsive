@@ -136,7 +136,7 @@ blockquote {
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  width: 580px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -364,9 +364,31 @@ body.blog aside img {
 
   /************************* RESPONSIVE BLOG PAGE ******************/
 
+@media screen and (max-width: 780px) {
+  .container  {
+    display: grid;
+    grid-template-rows: minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto);
+    grid-template-areas:  "a"
+                          "blog-article"
+                          "partners"
+                          "submenus"
+                          "e";
+  }
 
+  .main {
+    display: block;
+    grid-area: blog-article;
+  }
 
+  .right {
+    display: block;
+    grid-area: partners;
+  }
 
+  section.left {
+    display: flex;
+    grid-area: submenus;
+  }
 
 
 
