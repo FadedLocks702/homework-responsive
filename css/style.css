@@ -272,7 +272,7 @@ body.blog aside img {
   max-height:200px;
   margin-bottom: 20px;
 }
-/** LETS GET RESPONSIVE **/
+/************************* RESPONSIVE LANDING ******************/
 
 @media screen and (max-width: 780px){
 
@@ -300,10 +300,10 @@ body.blog aside img {
   header.page-header {
     flex-direction: column;
     grid-area: a;
+    min-height: 50px;
     background: url('../images/bg.jpg') no-repeat top center #fff;
     background-size: cover;
     padding: 10px 15px;
-    min-height: 50px;
   }
 
   header div {
@@ -338,14 +338,11 @@ body.blog aside img {
   #services {
     flex-direction: column;
     grid-area: b;
-    flex-wrap: wrap;
-    align-items: flex-start;
   }
 
-  #services div{
+  #services div {
     display: block;
     width: auto;
-    flex-shrink: 1;
   }
 
   aside {
@@ -363,6 +360,20 @@ body.blog aside img {
     display: block;
     grid-area: e;
     text-align: center;
+  }
+
+  /************************* RESPONSIVE BLOG PAGE ******************/
+
+@media screen and (max-width: 780px){
+
+  body {display: grid;
+    grid-template-rows: minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto);
+    grid-template-areas:  "a"
+                          "b"
+                          "c"
+                          "d"
+                          "e"
+                          "f";
   }
 
 
