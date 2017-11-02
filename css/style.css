@@ -283,6 +283,7 @@ body.blog aside img {
                           "c"
                           "d"
                           "e";
+    grid-template-columns: 100%;
   }
 
     .menu {
@@ -365,7 +366,7 @@ body.blog aside img {
   /************************* RESPONSIVE BLOG PAGE ******************/
 
 @media screen and (max-width: 780px) {
-  .container  {
+  .blog  {
     display: grid;
     grid-template-rows: minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto);
     grid-template-areas:  "a"
@@ -373,21 +374,25 @@ body.blog aside img {
                           "partners"
                           "submenus"
                           "e";
+    grid-template-columns: 100%;
   }
 
-  .main {
+
+
+  section.main {
     display: block;
     grid-area: blog-article;
+    width: 100%;
   }
 
-  .right {
+  aside.right {
     display: block;
     grid-area: partners;
   }
 
-  section.left {
-    display: flex;
-    grid-area: submenus;
+ section.left {
+    display: block;
+    flex-direction: column;
   }
 
 
