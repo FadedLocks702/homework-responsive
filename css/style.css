@@ -274,9 +274,9 @@ body.blog aside img {
 }
 /************************* RESPONSIVE LANDING ******************/
 
-@media screen and (max-width: 780px){
-
-  body {display: grid;
+@media screen and (max-width: 780px) {
+  .main-container {
+    display: grid;
     grid-template-rows: minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto);
     grid-template-areas:  "a"
                           "b"
@@ -363,18 +363,6 @@ body.blog aside img {
   }
 
   /************************* RESPONSIVE BLOG PAGE ******************/
-
-@media screen and (max-width: 780px){
-
-  body {display: grid;
-    grid-template-rows: minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto);
-    grid-template-areas:  "a"
-                          "b"
-                          "c"
-                          "d"
-                          "e"
-                          "f";
-  }
 
 
 
