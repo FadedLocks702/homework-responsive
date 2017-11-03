@@ -184,7 +184,6 @@ body.blog .page-header {
   min-height:125px;
   /*padding: 0px;*/
   align-items: center;
-  justify-content: space-around;
 }
 
 body.blog .container { /* targets elements with class of container, that are descendants of a <body class="blog"> element */
@@ -289,8 +288,7 @@ body.blog aside img {
     .menu {
     display: flex;
     color: white;
-    margin: 50px;
-/*    padding: 20px;*/
+
   
   }
 
@@ -299,12 +297,17 @@ body.blog aside img {
   }
 
   header.page-header {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     grid-area: a;
     min-height: 50px;
     background: url('../images/bg.jpg') no-repeat top center #fff;
     background-size: cover;
-    padding: 10px 15px;
+  }
+
+  body.blog .container {
+    min-height: 125px;
+    justify-content: space-around;
   }
 
   header div {
@@ -324,7 +327,7 @@ body.blog aside img {
   } /**set up menu nav**/
 
     nav.open {
-    height: 400px;
+    height: 300px;
   }
 
   header ul {
@@ -381,19 +384,23 @@ body.blog .container  {
 
   section.main {
     display: block;
-    grid-area: blog-article;
+    grid-area: b;
     width: 100%;
   }
 
   aside.right {
     display: block;
-    grid-area: partners;
+    grid-area: c;
   }
 
  section.left {
-    display: block;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: d;
   }
+
+  
 
 
 
