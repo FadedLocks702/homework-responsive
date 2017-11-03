@@ -366,13 +366,13 @@ body.blog aside img {
   /************************* RESPONSIVE BLOG PAGE ******************/
 
 @media screen and (max-width: 780px) {
-  .blog  {
+body.blog .container  {
     display: grid;
     grid-template-rows: minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto) minmax(auto,auto);
     grid-template-areas:  "a"
-                          "blog-article"
-                          "partners"
-                          "submenus"
+                          "b"
+                          "c"
+                          "d"
                           "e";
     grid-template-columns: 100%;
   }
