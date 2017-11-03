@@ -288,9 +288,8 @@ body.blog aside img {
     .menu {
     display: flex;
     color: white;
-
-  
   }
+
 
     .slogan {
     display: none;
@@ -313,12 +312,11 @@ body.blog aside img {
   header div {
     padding-top: 0px;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
 
-    nav {
+  .page-header nav{
     overflow: hidden;
     height: 0;
     transition: 1s all;
@@ -393,6 +391,7 @@ body.blog .container section.left {
     grid-area: d;
     justify-self: center;
 }
+
 
 
 
