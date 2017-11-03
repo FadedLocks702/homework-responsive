@@ -381,26 +381,18 @@ body.blog .container  {
   }
 
 
-
-  section.main {
-    display: block;
+body.blog .container section.main {
     grid-area: b;
-    width: 100%;
-  }
+}
 
-  aside.right {
-    display: block;
+body.blog .container aside.right {
     grid-area: c;
-  }
+}
 
- section.left {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+body.blog .container section.left {
     grid-area: d;
-  }
-
-  
+    justify-self: center;
+}
 
 
 
