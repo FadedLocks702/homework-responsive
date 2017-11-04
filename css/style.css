@@ -299,7 +299,8 @@ body.blog aside img {
     display: flex;
     flex-direction: row;
     grid-area: a;
-    min-height: 50px;
+/*    min-height: 50px;*/
+    min-height: 3.125em;
     background: url('../images/bg.jpg') no-repeat top center #fff;
     background-size: cover;
   }
@@ -381,8 +382,11 @@ body.blog .container  {
 
 body.blog .container section.main {
     grid-area: b;
-    margin: 10px;
-    padding: 10px;
+/*    margin: 16px;*/
+    margin: 1em;
+/*    padding: 16px;*/
+    padding: 1em;
+
 }
 
 body.blog .container aside.right {
