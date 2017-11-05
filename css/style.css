@@ -63,7 +63,7 @@ header.page-header { /* selects header elements that have the class name of page
 }
 
 header nav, header div, header .logo{
-  width:40%;
+  width: 40%;
 }
 
 header nav {
@@ -400,6 +400,10 @@ body.blog .container section.left {
 
 body.blog section.left nav {
     display: inline-block;
+}
+
+.links-menu h3 nav{
+  display: inline-flex;
 }
 
 
