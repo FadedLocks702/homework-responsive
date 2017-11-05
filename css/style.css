@@ -59,7 +59,7 @@ header.page-header { /* selects header elements that have the class name of page
   flex-wrap: wrap;
   padding: 20px 75px;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 header nav, header div, header .logo{
